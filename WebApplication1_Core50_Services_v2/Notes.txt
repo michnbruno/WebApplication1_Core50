@@ -1,0 +1,98 @@
+﻿{"p_entity":"tbl_contacts","p_recId":"0","p_primeKey":"id","record":{"id":"0","name":"etwqet","email":"eryye","phone":"ewry","url":"weyr","notes":"ewryery"}}
+
+
+{"p_entity":"tbl_contacts","p_entitySingular":"tbl_contacts","p_recId":"0","p_primeKey":"id",
+
+"record": {"id":"0","name":"etwqet","email":"eryye","phone":"ewry","url":"weyr","notes":"ewryery"}},
+"record2": {
+    "age": 13,
+    "roll": 2,
+    "name": "fsdag",
+    "class": 1,
+    "section": "saddsg",
+    "id": "0"
+  },
+"updateType": "add"
+
+}
+
+
+{"p_entity":"tbl_employees","p_recId":"0","p_primeKey":"id","record":{"id":"0","firstName":"afsa","lastName":"sad","designation":"sd"}}
+
+
+{"p_entity":"tblBook","p_recId":"0","p_primeKey":"id","record":{"id":"0","name":"dsdg","authorName":"sadg","publisherName":"sadg","price":"4","discount":"4","rating":"4","language":"asg","publicationYear":"1987","isbN13":"sadg","isbN10":"sdga","category":"sdg","image":"sadg","details":"sadg"}}
+
+
+
+
+
+{"p_entity":"tblBook","p_entitySingular":"tblBook","p_recId":"0","p_primeKey":"Id",
+
+"record":{"id":"0","name":"dsdg","authorName":"sadg","publisherName":"sadg","price":"4","discount":"4","rating":"4","language":"asg","publicationYear":"1987","isbN13":"sadg","isbN10":"sdga","category":"sdg","image":"sadg","details":"sadg"},
+
+
+"updateType": "add"
+
+}
+
+
+
+
+{"p_entity":"tblBooks","p_entitySingular":"tblBook","p_recId":"0","p_primeKey":"Id",
+
+"record":{"id":"0","name":"dsdg","authorName":"sadg","publisherName":"sadg","price":"4","discount":"4","rating":"4","language":"asg","publicationYear":"1987","isbN13":"sadg","isbN10":"sdga","category":"sdg","image":"sadg","details":"sadg"},
+
+"record2": {
+    "age": 13,
+    "roll": 2,
+    "name": "fsdag",
+    "class": 1,
+    "section": "saddsg",
+    "id": "0"
+  },
+"updateType": "add"
+
+}
+
+
+
+{
+  "p_entity": "tblBook",
+  "p_entitySingular": "tblBook",
+  "p_recId": "1",
+  "p_primeKey": "Id",
+  "record": {},
+  "updateType": "string"
+}
+
+
+
+
+
+        private Type GetEntityType(string entityNameSingular)
+        {
+            dynamic a2 = null;
+
+            foreach (Type t in Assembly.GetExecutingAssembly().GetExportedTypes())
+            {
+                var test = t;
+
+                if (t.Name == entityNameSingular)
+                {
+                    a2 = t;
+                }
+                else
+                {
+                    a2 = null;
+                }
+
+                Console.WriteLine(t);
+            }
+           // Type newt = a2;
+            return a2;
+
+        }
+
+
+
+Microsoft.AspNetCore.Mvc.NewtonsoftJ
